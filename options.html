@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="button.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Gitlab Time Tracker - Config</title>
+</head>
+
+<body class="full">
+    <h1>Currently tracked tasks</h1>
+    <table id="trackedTasksTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Total time spent</th>
+            <th></th>
+        </tr>
+    </table>
+    <h1>Add manually a task</h1>
+    <input type="number" name="task_id" id="task_id" placeholder="ID">
+    <input type="text" name="task_name" id="task_name" placeholder="Name">
+    <button id="addClassButton">Add task</button>
+
+</body>
+<script src="common.js"></script>
+<script src="options.js"></script>
+
+</html>

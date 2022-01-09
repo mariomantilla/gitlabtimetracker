@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="button.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="taskDetected" style="display: none;">
+        Task Detected
+        <div id="detectedTaskName"></div>
+        <button id="addDetectedTask">Make current task</button>
+    </div>
+    <div id="hasCurrentTask" style="display: none;">
+        Current task
+        <div id="taskName">Task Name</div>
+        <div>Total time spent: <span id="totalTime">00:00:00</span></div>
+        <button id="toggleTimer">Start!</button><button id="goToConfigButton"><i class="material-icons" style="font-size: 18px; vertical-align: middle;">settings</i></button>
+    </div>
+    <div id="hasntCurrentTask">
+        <h4>No task selected. Go to gitlab.com to pick a task or add one in the config.</h4>
+        <button id="goToConfigButton">Go to config</button>
+    </div>
+    <script src="common.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
